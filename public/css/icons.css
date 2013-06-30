@@ -1,0 +1,69 @@
+/* Main icons class */
+.icons {
+	background-image:url(../../img/icons.png);
+	display:inline-block;
+	background-repeat:no-repeat;
+}
+
+/* Profile size icons */
+.icons.profile {
+	width:128px;
+	height:128px;
+}
+.icons.google-plus {
+	background-position:0 0;
+}
+.icons.email {
+	background-position:-128px 0;
+}
+.icons.youtube {
+	background-position:-256px 0;
+}
+.icons.facebook {
+	background-position:-384px 0;
+}
+.icons.twitter {
+	background-position:-512px 0;
+}
+.icons.skype {
+	background-position:-640px 0;
+}
+.icons.steam {
+	background-position:-768px 0;
+}
+.icons.minecraft {
+	background-position:-896px 0;
+}
+.icons.web {
+	background-position:0 -128px;
+}
+
+/* Cork size icons */
+.icons.cork {
+	width:32px;
+	height:32px;
+}
+.icons.unreademail {
+	background-position:0 -256px;
+}
+.icons.delete {
+	background-position:-32px -256px;
+}
+.icons.new {
+	background-position:-64px -256px;
+}
+.icons.folder {
+	background-position:-96px -256px;
+}
+.icons.cork-twitter {
+	background-position:0 -288px;
+}
+.icons.cork-rss {
+	background-position:-32px -288px;
+}
+.icons.cork-flickr {
+	background-position:-64px -288px;
+}
+.icons.cork-fb {
+	background-position:-96px -288px;
+}

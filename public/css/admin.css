@@ -1,0 +1,63 @@
+html {
+	background:#eee;
+}
+
+body {
+	background:#fff;
+	width:1200px;
+	margin:0 auto;
+	box-shadow:0 0 12px rgba(0, 0, 0, 0.4);
+	padding:2em;
+	font-size:14px;
+	line-height:1.5em;
+	color:#333;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height:1.3em;
+}
+
+a {
+    text-decoration:none;
+    color:#3d88c7;
+}
+
+a:hover {
+    color:#0f0;
+}
+
+a:active {
+    color:#f00;
+}
+
+.header {
+	border-bottom:1px dashed #ccc;
+    padding-bottom:15px;
+}
+
+.title {
+	font-size:50px;
+	line-height:60px;
+}
+
+.desc {
+}
+
+.header .user {
+	display:block;
+	float:right;
+}
+
+.header .user .hello {
+	font-size:30px;
+}
+
+.links {
+	float:right;
+}
+
+.footer {
+	border-top:1px dashed #ccc;
+	padding-top:15px;
+}

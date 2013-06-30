@@ -1,0 +1,29 @@
+DirectoryIndex home.php
+DirectoryIndex index.php
+DirectoryIndex index.html
+
+ErrorDocument 404 /err/404.php
+ErrorDocument 403 /err/403.php
+ErrorDocument 500 /err/500.php
+
+Options +FollowSymlinks
+RewriteEngine On
+RewriteBase /
+
+# redirect humans.txt to humans.html
+Redirect /humans.txt /humans
+
+# first handle these explicit pattern matches
+RewriteRule ^u/(.+)$         /profile.php?u=$1   [L,QSA]
+# it's quite likely this is what you want here instead:
+RewriteRule ^s/([^/]+)/(.+)$ /page.php?p=$1&f=$2 [L,QSA]
+RewriteRule ^s/(.+)$         /page.php?p=$1      [L,QSA]
+RewriteRule ^drive/(.+)$     /drive.php?dir=$1   [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+# I'm guessing you want to only rewrite to script that exists in the root, if
+# this is not the case you can change this back to .+
+#RewriteRule ^[^/]+$ /$0.php [L,QSA]
+RewriteRule ^(.+)$ /$1.php [L,QSA]
