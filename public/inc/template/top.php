@@ -1,6 +1,6 @@
 <?php
-// php-site - Top file
-// Last updated: 28.06.2013
+// YEYD - Top file
+// Last updated: 30.06.2013
 ?>
 <!doctype html>
 <html>
@@ -35,7 +35,7 @@
 										<li><a href="<?php echo $domain; ?>/logout"><i class="icon-signout"></i> Sign Out</a></li>
 									</ul>
 								</li>
-								<li><a href="/search">Search</a></li>
+								<li><a href="<?php echo $domain; ?>/search">Search</a></li>
 								<?php
 								$show_apps_dropdown = false;
 								foreach ($user_data as $key => $value) {
@@ -87,7 +87,7 @@
 						} else {
 							?>
 
-							<form action="/login<?php echo $SITE['fileext']; ?>" method="post" class="navbar-form pull-right visible-desktop">
+							<form action="<?php echo $domain; ?>/login<?php echo $SITE['fileext']; ?>" method="post" class="navbar-form pull-right visible-desktop">
 								<div class="input-prepend" style="margin-bottom:0;">
 									<span class="add-on"><i class="icon-user"></i></span>
 									<input name="username" type="text" placeholder="Username">
@@ -97,11 +97,11 @@
 									<input name="password" type="password" placeholder="Password">
 								</div>
 								<button type="submit" class="btn"><span class="add-on"><i class="icon-signin"></i></span> Sign in</button>
-								<a class="btn" href="/register<?php echo $SITE['fileext']; ?>">Sign up</a>
+								<a class="btn" href="<?php echo $domain; ?>/register<?php echo $SITE['fileext']; ?>">Sign up</a>
 							</form>
 							<ul class="nav pull-right hidden-desktop">
-								<li><a href="/login<?php echo $SITE['fileext']; ?>">Sign in</a></li>
-								<li><a href="/register<?php echo $SITE['fileext']; ?>">Sign up</a></li>
+								<li><a href="<?php echo $domain; ?>/login<?php echo $SITE['fileext']; ?>">Sign in</a></li>
+								<li><a href="<?php echo $domain; ?>/register<?php echo $SITE['fileext']; ?>">Sign up</a></li>
 							</ul>
 							<?php
 						}
