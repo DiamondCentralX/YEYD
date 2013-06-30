@@ -1,5 +1,5 @@
 		<div class="footer">
-			&copy; <?php echo $SITE['copyright_from'] . ' - ' . $SITE['copyright_to'] . ' ' . $SITE['copyright_owner']; ?>. All rights reserved.
+			Powered by <?php echo '<a target="_blank" href="' . $PROJECT['web'] . '">' . $PROJECT['title'] . ' v' . $PROJECT['version'] . '</a>'; ?>
 		</div>
 	</body>
 </html>
