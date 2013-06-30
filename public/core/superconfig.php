@@ -32,12 +32,12 @@ $PAGE['stylesheets']			=	array('/css/bootstrap.min.css','/css/bootstrap-responsi
 $PAGE['scripts']				=	array('/js/jquery.js','/js/primary.js','/js/bootstrap.min.js');
 
 // Selfsetting-variables or something like that ... :D
-$domain							=	'//' . $_SERVER['HTTP_HOST'];
+$domain							=	'//' . $_SERVER['HTTP_HOST'] . $SITE['location'];
 
 // Project
 // DO NOT CHANGE!!!
 $PROJECT['title']				=	'YEYD';
-$PROJECT['version']				=	'0.01.2';
+$PROJECT['version']				=	'0.01.2-1';
 $PROJECT['mainauthor']			=	'erty5000';
 $PROJECT['mainauthor_web']		=	'https://github.com/erty5000/';
 $PROJECT['web']					=	'https://github.com/DiamondCentralX/yeyd';
