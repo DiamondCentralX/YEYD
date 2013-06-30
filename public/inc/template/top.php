@@ -35,7 +35,7 @@
 										<li><a href="<?php echo $domain; ?>/logout"><i class="icon-signout"></i> Sign Out</a></li>
 									</ul>
 								</li>
-								<li><a href="<?php echo $domain; ?>/search">Search</a></li>
+								<li><a href="<?php echo $domain; ?>/search<?php echo $SITE['fileext'] ?>">Search</a></li>
 								<?php
 								$show_apps_dropdown = false;
 								foreach ($user_data as $key => $value) {
