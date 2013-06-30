@@ -1,29 +1,9 @@
 <title><?php echo $PAGE['title'] . ' | ' . $SITE['title']; ?></title>
 
 <?php
-// Add desired theme
-/*
-if (logged_in()) {
-	$PAGE['stylesheets'][0] = '/css/theme/'.$user_data['theme'].'.css';
-} else {
-	$PAGE['stylesheets'][0] = '/css/theme/default.css';
-}
-*/
-
-// Add stylesheet for the set footer
-/*if (logged_in()) {
-	if ($user_data['footer_style'] != 'disabled') {
-		$PAGE['stylesheets'] = '/css/footer.css';
-
-		if ($user_data['footer_style'] != 'none') {
-			$PAGE['stylesheets'][] = '/css/footer_'.$user_data['footer_style'].'.css';
-		}
-	}
-}*/
-
 // Echo out stylesheets from the $page_stylesheets array
 foreach ($PAGE['stylesheets'] as $stylesheet) {
-	echo '<link rel="stylesheet" href="'.$stylesheet.'">';
+	echo '<link rel="stylesheet" href="'.$domain.$stylesheet.'">';
 }
 ?>
 

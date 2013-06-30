@@ -9,11 +9,8 @@
 		// Include head.php file
 		include 'head.php';
 		?>
-
-		<style>body{padding-bottom:50px;}#footer-more-btn{cursor:pointer;}<?php if (isset($_GET['Sondre2B']) && empty($_GET['Sondre2B'])) echo 'body{background:url(/img/son.png);}'; if (isset($_GET['Sondre2L']) && empty($_GET['Sondre2L'])) echo '*{background:url(/img/son2.png);}'; if (isset($_GET['DWH']) && empty($_GET['DWH'])) echo '*{background:url(/img/dwh.png);}'; if (isset($_GET['HurrDurr']) && empty($_GET['HurrDurr'])) echo 'body{background:url(/img/hurr-durr-2.gif);}'; ?></style>
 	</head>
 	<body>
-		<?php if (isset($_GET['HurrDurr']) && empty($_GET['HurrDurr'])) echo '<audio src="/audio/hd.mp3" autoplay loop></audio>'; ?>
 		<div class="navbar navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">

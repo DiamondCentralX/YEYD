@@ -30,7 +30,7 @@ $domain							=	'//' . $_SERVER['HTTP_HOST'];
 // Project
 // DO NOT CHANGE!!!
 $PROJECT['title']				=	'YEYD';
-$PROJECT['version']				=	'0.01';
+$PROJECT['version']				=	'0.01.1';
 $PROJECT['mainauthor']			=	'erty5000';
 $PROJECT['mainauthor_web']		=	'https://github.com/erty5000/';
 $PROJECT['web']					=	'https://github.com/DiamondCentralX/yeyd';
