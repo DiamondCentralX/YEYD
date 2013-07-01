@@ -1,6 +1,6 @@
 <?php
-// php-site - Profile page
-// Last updated: 13.06.2013
+// YEYD - Profile page
+// Last updated: 01.07.2013
 
 // Require init.php
 require 'core/init.php';
@@ -54,9 +54,9 @@ if (user_exists($db, $_GET['u'])) {
 			<p>
 				<?php
 				if (file_exists('img/profile/' . $profile_data['username'] . '.png')) {
-					echo '<img style="float:left;" src="/img/getProfileImg.php?u='.$profile_data['username'].'" title="Profile Image">';
+					echo '<img style="float:left;" src="'.$domain.'/img/getProfileImg.php?u='.$profile_data['username'].'" title="Profile Image">';
 				} else {
-					echo '<img style="float:left;" src="/img/getProfileImg.php?u=default" title="Profile Image">';
+					echo '<img style="float:left;" src="'.$domain.'/img/getProfileImg.php?u=default" title="Profile Image">';
 				}
 				if (!empty($profile_data['website'])) {
 					echo '<a target="_blank" href="'.$profile_data['website'].'"><span title="'.$profile_data['website'].'" class="icons profile web"></span></a>';

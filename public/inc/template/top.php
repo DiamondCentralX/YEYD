@@ -26,7 +26,7 @@
 								<li class="dropdown">
 									<a class="dropdown-toggle" data-toggle="dropdown" href="#">Me <?php echo (get_message_count($db, $session_user_id) != 0) ? '<b>('.get_message_count($db, $session_user_id).')</b>' : ''; ?> <i class="icon-caret-down"></i></a>
 									<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-										<li><a href="/u/<?php echo $user_data['username']; ?>"><i class="icon-user"></i> My Profile</a></li>
+										<li><a href="<?php echo $domain . '/profile.php?u=' . $user_data['username']; ?>"><i class="icon-user"></i> My Profile</a></li>
 										<li class="divider"></li>
 										<li><a href="<?php echo $domain; ?>/settings<?php echo $SITE['fileext']; ?>"><i class="icon-gear"></i> Settings</a></li>
 										<li><a href="<?php echo $domain; ?>/messages<?php echo $SITE['fileext']; ?>"><i class="icon-envelope"></i> Messages <?php echo (get_message_count($db, $session_user_id) != 0) ? '<b>('.get_message_count($db, $session_user_id).')</b>' : ''; ?></a></li>

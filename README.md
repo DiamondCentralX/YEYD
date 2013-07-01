@@ -11,3 +11,4 @@ If you find any bugs or run in to other problems using YEY:D please tell me by a
 ## Notes ##
 - The user with the user_id of 1 will be the admin!!
 - Click the little plus thingy in the bottom right corner of the page so you can see all the awesome stuff used in YEY:D
+- I know it says php-site and not YEYD in some places. Thats because I called YEYD, php-site when I was developing it in room without knowing I would ever publish it :D

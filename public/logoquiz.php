@@ -57,7 +57,7 @@ include 'inc/template/top.php';
 		} else {
 			?>
 			<div class="answer-form">
-				<form action="?answer<?php echo $site_fileext; ?>" method="post">
+				<form action="?answer<?php echo $SITE['fileext']; ?>" method="post">
 					<input type="hidden" name="logo_id" value="<?php echo $id; ?>">
 					<input type="text" name="answer" autocomplete="off" placeholder="Write your answer here :D">
 					<br>

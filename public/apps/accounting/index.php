@@ -21,7 +21,7 @@ if (isset($_GET['page']) && !empty($_GET['page'])) {
 		include '../../inc/template/top.php';
 		?>
 		<div class="container">
-			<h1>Regnskap<sup><sup>MAY BE BETA IN LIKE 50 YEARS ...</sup></sup></h1>
+			<h1>Accounting<sup><sup>MAY BE BETA IN LIKE 50 YEARS ...</sup></sup></h1>
 			<div class="navbar">
 				<div class="navbar-inner">
 					<ul class="nav">
