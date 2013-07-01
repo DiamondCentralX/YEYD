@@ -1,7 +1,3 @@
-/*	php-site - Primary JS file
- *	Last updated: 12.07.2013
- */
-
 /* clickerx - start */
 function clickerx(){
 	var audio = document.createElement("audio");
@@ -58,29 +54,6 @@ $('#footer-more-btn').on('click', function () {
 	}
 });
 
-/*
-$(document).keypress(function(event){
-	switch (String.fromCharCode(event.which)) {
-		case 'j':
-			window.location = '?';
-			break;
-		case 'k':
-			window.location = '?Sondre2B';
-			break;
-		case 'l':
-			window.location = '?Sondre2L';
-			break;
-		case 'h':
-			window.location = '?DWH';
-			break;
-		case 'f':
-			launchFullScreen(document.documentElement);
-			break;
-		default:
-			console.log(event.which);
-	}
-});*/
-
 // Find the right method, call on correct element
 function launchFullScreen(element) {
 	if(element.requestFullScreen) {
@@ -100,5 +73,21 @@ function cancelFullscreen() {
 		document.mozCancelFullScreen();
 	} else if(document.webkitCancelFullScreen) {
 		document.webkitCancelFullScreen();
+	}
+}
+
+$(function(){
+    $.contextMenu({
+        selector: 'html', 
+        callback: function(key,options) { dostuff(key,options); },
+        items: {
+            "lfs": {name: "Launch Fullscreen"}
+        }
+    });
+});
+
+function dostuff(key, options) {
+	if (key == 'lfs') {
+		launchFullScreen(document.documentElement);
 	}
 }

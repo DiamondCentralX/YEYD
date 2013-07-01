@@ -7,8 +7,8 @@ foreach ($PAGE['stylesheets'] as $stylesheet) {
 }
 ?>
 
-<meta name="description" content="<?php echo $site_desc; ?>">
-<meta name="keywords" content="<?php echo $site_keywords; ?>">
-<meta name="author" content="<?php echo $site_author; ?>">
+<meta name="description" content="<?php echo $SITE['desc']; ?>">
+<meta name="keywords" content="<?php echo $SITE['keywords']; ?>">
+<meta name="author" content="<?php echo $SITE['author']; ?>">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">

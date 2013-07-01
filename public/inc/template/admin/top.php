@@ -14,4 +14,6 @@ $PAGE['stylesheets'] = array('/css/admin.css');
 			</div>
 			<div class="title"><?php echo explode(' | ', $PAGE['title'])[0]; ?></div>
 			<div class="desc"><a href="<?php echo $domain; ?>"><?php echo $SITE['title']; ?></a> admin dashboard</div>
+			<br>
+			<a href="home<?php echo $SITE['fileext']; ?>">Home</a> | <a href="config<?php echo $SITE['fileext']; ?>">Config</a>
 		</div>

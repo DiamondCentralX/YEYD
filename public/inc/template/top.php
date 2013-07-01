@@ -1,7 +1,3 @@
-<?php
-// YEYD - Top file
-// Last updated: 30.06.2013
-?>
 <!doctype html>
 <html>
 	<head>

@@ -1,6 +1,6 @@
 <?php
 // YEYD - Init
-// Last updated: 30.06.2013
+// Last updated: 01.07.2013
 
 // Start a session
 session_start();
@@ -10,6 +10,9 @@ require __DIR__ . '/superconfig.php';
 
 // Require database related files
 require __DIR__ . '/db/connect.php';
+
+// Set variables from db
+require __DIR__ . '/getvars.php';
 
 // Require other function files
 require 'func/general.php';

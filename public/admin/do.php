@@ -19,8 +19,12 @@ if (isset($_GET['action']) && !empty($_GET['action'])) {
 	if ($_GET['action'] == 'ban') {
 		if (isset($_GET['user']) && !empty($_GET['user'])) {
 			if (user_exists($db, $_GET['user'])) {
-				ban_user($db, user_id_from_username($db, $_GET['user']));
-				echo 'The user "'.$_GET['user'].'" is now banned';
+				if (user_id_from_username($db, $_GET['user']) != 1) {
+					ban_user($db, user_id_from_username($db, $_GET['user']));
+					echo 'The user "'.$_GET['user'].'" is now banned';
+				} else {
+					echo 'You can\'t ban the admin!';
+				}
 			} else {
 				echo 'The user "'.$_GET['user'].'" dosn\'t exist';
 			}

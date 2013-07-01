@@ -25,7 +25,7 @@
 						<ul class="nav nav-list">
 							<li class="nav-header">Even more cool stuff used!</li>
 							<li><a target="_blank" href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a></li>
-							<li>My brain ...</li>
+							<li><a target="_blank" href="https://github.com/medialize/jQuery-contextMenu">jQuery-contextMenu by medialize</a></li>
 						</ul>
 					</div>
 				</div>
